@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# run the application
+/opt/application/run.sh
+
 export USER_ID=$(id -u)
 export GROUP_ID=$(id -g)
 grep -v ^default /etc/passwd > "$HOME/passwd"
